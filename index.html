@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Packagos - The Fiesta for Your Dependencies</title>
+    <title>Packagos - The Legend of the Sprint Planning</title>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.344.0/dist/umd/lucide.min.js"></script>
     <style>
         :root {
@@ -55,8 +55,19 @@
 
         h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             letter-spacing: 1px;
+        }
+
+        .origin-badge {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            letter-spacing: 0.5px;
         }
 
         .tagline {
@@ -125,7 +136,7 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             text-align: center;
             border-bottom: 4px solid var(--secondary);
-            transition: translateY 0.3s;
+            transition: transform 0.3s;
         }
 
         .feature-card:hover {
@@ -143,12 +154,13 @@
             font-size: 1.4rem;
         }
 
-        .config-section {
+        .manifesto {
             background-color: #264653;
             color: white;
             padding: 4rem 2rem;
             border-radius: 16px;
             margin: 4rem 0;
+            text-align: center;
         }
 
         .config-grid {
@@ -156,6 +168,8 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             align-items: center;
+            text-align: left;
+            margin-top: 2rem;
         }
 
         pre {
@@ -183,6 +197,11 @@
             text-align: center;
             margin-top: 3rem;
         }
+
+        .strike {
+            text-decoration: line-through;
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
@@ -190,7 +209,8 @@
     <header>
         <div class="container">
             <h1>💃 Packagos</h1>
-            <p class="tagline">The spicy, ultra-fast package manager that treats your dependencies like a fiesta.</p>
+            <div class="origin-badge">🤫 If you know, you know.</div>
+            <p class="tagline">Born from a moment of pure genius in front of the stakeholders. We made it a lifestyle.</p>
             
             <div class="terminal">
                 <div class="terminal-header">
@@ -198,13 +218,13 @@
                     <div class="dot dot-y"></div>
                     <div class="dot dot-g"></div>
                 </div>
-                <div><span style="color: #66d9ef;">$</span> packagos install flamenco express</div>
-                <div style="color: #fff; margin-top: 5px;">📦 Fetching ingredients...</div>
-                <div style="color: #e9c46a;">🔥 Simmering 142 dependencies into the paella...</div>
-                <div style="color: #a6e22e;">🎉 ¡Olé! Installation finished in 240ms.</div>
+                <div><span style="color: #66d9ef;">$</span> packagos start --demo-mode</div>
+                <div style="color: #e9c46a; margin-top: 5px;">👀 Initiating Sprint Planning protocol...</div>
+                <div style="color: #fff; margin-top: 5px;">🎤 Delivering flawless explanation while sweat drips down...</div>
+                <div style="color: #a6e22e;">🎉 ¡Olé! The crowd goes wild. The typo is now permanent lore.</div>
             </div>
 
-            <a href="#install" class="btn">Get Started, Amigo</a>
+            <a href="#try" class="btn" onclick="alert('Congratulations! You just clicked a button on a fake package manager website. Your code is now 10% spicier.')">Run `npm install -g packagos`</a>
         </div>
     </header>
 
@@ -212,45 +232,47 @@
         
         <section class="features">
             <div class="feature-card">
-                <i class="feature-icon" data-lucide="zap" size="48"></i>
-                <h3>Spicy Performance</h3>
-                <p>Blazing fast parallel downloads fueled by pure gazpacho. No more staring at a frozen progress bar while your coffee gets cold.</p>
+                <i class="feature-icon" data-lucide="sparkles" size="48"></i>
+                <h3>The Sacred Sprint Lore</h3>
+                <p>We are sworn to absolute secrecy regarding the exact screen-share details. Let's just say a happy little demo accident birthed a movement. Some calls are too legendary to correct.</p>
             </div>
             
             <div class="feature-card">
-                <i class="feature-icon" data-lucide="shield-check" size="48"></i>
-                <h3>Guacamole Security</h3>
-                <p>Every single package is strictly verified and tightly locked. No rogue scripts are slipping past our aggressive security mariachi.</p>
+                <i class="feature-icon" data-lucide="smile" size="48"></i>
+                <h3>100% Pure Fun</h3>
+                <p>We guarantee absolutely zero production value. If your app crashes, Packagos will just play a virtual acoustic guitar chord and remind you that life is short.</p>
             </div>
 
             <div class="feature-card">
-                <i class="feature-icon" data-lucide="git-fork" size="48"></i>
-                <h3>Zero Conflict Paella</h3>
-                <p>Our smart resolution engine beautifully blends complex modules together without breaking your environment. No messy overlaps.</p>
+                <i class="feature-icon" data-lucide="shuffle" size="48"></i>
+                <h3>Vibe-Check Resolution</h3>
+                <p>While <code>npm</code> uses strict semantic versioning, Packagos uses a strict vibe-check. If a dependency looks friendly and matches the energy of the demo, it gets added to the paella.</p>
             </div>
         </section>
 
-        <section class="config-section">
+        <section class="manifesto">
+            <h2>The "We're Keeping It" Manifesto</h2>
+            <p style="max-width: 600px; margin: 1rem auto; opacity: 0.9;">In a world obsessed with standardizing everything, we stand with the teams who embrace the joy in the chaos. This is our manifesto.</p>
+            
             <div class="config-grid">
                 <div>
-                    <h2>The <code>fiesta.json</code> Configuration</h2>
-                    <p style="margin: 1rem 0 2rem 0; opacity: 0.9;">Say goodbye to boring configuration files. Define your ecosystem beautifully using our culturally refined manifest format.</p>
+                    <h3>The <code>fiesta.json</code></h3>
+                    <p style="margin: 0.5rem 0 1rem 0; opacity: 0.8;">Designed perfectly to look highly professional during a screen-share, until you actually read the keys.</p>
                     <ul style="list-style-type: none; padding: 0;">
-                        <li style="margin-bottom: 0.5rem;">✨ <strong>platillos</strong>: Core dependencies</li>
-                        <li style="margin-bottom: 0.5rem;">🌶️ <strong>picante</strong>: Dev dependencies with extra kick</li>
+                        <li style="margin-bottom: 0.5rem;">🍅 <strong>dependencias</strong>: The core stack.</li>
+                        <li style="margin-bottom: 0.5rem;">🌶️ <strong>picante_dev</strong>: Tools that make the presentation exciting.</li>
                     </ul>
                 </div>
                 <div>
 <pre>{
-  "name": "mi-gran-app",
-  "version": "1.0.0",
-  "platillos": {
-    "react": "^18.2.0",
-    "tailwindcss": "^3.3.0"
+  "name": "projecto-muy-loco",
+  "version": "0.0.1-maybe",
+  "dependencias": {
+    "expressos": "^4.18.2",
+    "vue-with-a-spanish-accent": "latest"
   },
-  "picante": {
-    "jest": "^29.5.0",
-    "typescript": "^5.0.4"
+  "picante_dev": {
+    "pretier-but-worse": "npm:prettier@*"
   }
 }</pre>
                 </div>
@@ -259,18 +281,17 @@
 
         <section class="siesta-mode">
             <i class="feature-icon" data-lucide="moon" size="32" style="color: var(--secondary)"></i>
-            <h3>Built-in Siesta Mode</h3>
-            <p style="margin-top: 0.5rem;">Run <code>packagos siesta</code> to automatically pause all heavy builds, mute Slack notifications, and let your laptop sleep for exactly 20 minutes. Productivity requires rest, hombre.</p>
+            <h3>Built-in Siesta Protocol</h3>
+            <p style="margin-top: 0.5rem;">Type <code>packagos siesta</code> when the Sprint Planning is over. It won't fix your open tickets, but it will close your laptop, block Slack, and play soothing ocean waves from Mallorca for 20 minutes.</p>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 Packagos Open Source Project. Made with ❤️, 🍅, and a dash of lime.</p>
+        <p>© 2026 Packagos Open Source Project. Proudly demoed since 2026. This website is entirely satirical, do not try to run this in production unless you are incredibly brave.</p>
     </footer>
 
     <script>
-        // Initialize icons
         lucide.createIcons();
     </script>
 </body>
